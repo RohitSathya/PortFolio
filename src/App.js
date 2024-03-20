@@ -27,9 +27,7 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-  useEffect(() => {
-    document.title = "RohitSathya | Portfolio"; // Change the title here
-  }, []);
+
 
   return (
     <Router>
