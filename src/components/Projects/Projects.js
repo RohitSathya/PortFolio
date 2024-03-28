@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import ec from "../../Assets/Projects/ec.png";
 import ec2 from "../../Assets/Projects/ec2.png";
+import ec3 from '../../Assets/Projects/ec3.png';
 
 function Projects() {
   return (
@@ -36,6 +37,17 @@ function Projects() {
               description="I've developed an e-commerce platform using the MERN stack, seamlessly integrating MongoDB, Express.js, React.js, and Node.js to deliver a dynamic and responsive shopping experience. This comprehensive solution empowers users to browse, purchase, and manage products effortlessly while ensuring scalability and performance in a modern web environment."
               ghLink="https://github.com/RohitSathya/Mern-ECommerce"
               demoLink="https://ecomerce-foront.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ec3}
+              isBlog={false}
+              title="UrlShrinker"
+              description="Experience the power of our URL shrinker website built with the MERN stack. Seamlessly shorten URLs for streamlined sharing and tracking. Our intuitive platform combines efficiency and elegance, providing a user-friendly experience. Simplify your link management and make every click count with our innovative solution."
+              ghLink="https://github.com/RohitSathya/UrlShrinker"
+              demoLink="https://url-shrinker-front.vercel.app/"
+            
             />
           </Col>
 
