@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import ec from "../../Assets/Projects/ec.png";
 import ec2 from "../../Assets/Projects/ec2.png";
 import ec3 from '../../Assets/Projects/ec3.png';
+import ec4 from '../../Assets/Projects/ec4.png'
 
 function Projects() {
   return (
@@ -47,6 +48,17 @@ function Projects() {
               description="Experience the power of our URL shrinker website built with the MERN stack. Seamlessly shorten URLs for streamlined sharing and tracking. Our intuitive platform combines efficiency and elegance, providing a user-friendly experience. Simplify your link management and make every click count with our innovative solution."
               ghLink="https://github.com/RohitSathya/UrlShrinker"
               demoLink="https://url-shrinker-front.vercel.app/"
+            
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ec4}
+              isBlog={false}
+              title="Sentimental Analysis"
+              description="Developed sentiment analysis project using Python Flask to analyze text sentiment and provide insights for emotional understanding."
+              ghLink="https://github.com/RohitSathya/SentimentalAnalysis"
+              demoLink="https://sentimentalanalysis-1.onrender.com/"
             
             />
           </Col>
