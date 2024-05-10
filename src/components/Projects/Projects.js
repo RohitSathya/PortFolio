@@ -6,6 +6,7 @@ import ec from "../../Assets/Projects/ec.png";
 import ec2 from "../../Assets/Projects/ec2.png";
 import ec3 from '../../Assets/Projects/ec3.png';
 import ec4 from '../../Assets/Projects/ec4.png'
+import ec5 from '../../Assets/Projects/ec5.webp'
 
 function Projects() {
   return (
@@ -59,6 +60,17 @@ function Projects() {
               description="Developed sentiment analysis project using Python Flask to analyze text sentiment and provide insights for emotional understanding."
               ghLink="https://github.com/RohitSathya/SentimentalAnalysis"
               demoLink="https://sentimentalanalysis-1.onrender.com/"
+            
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ec5}
+              isBlog={false}
+              title="Bank Management"
+              description="Developed and Designed Bank Management System Application using MERN-Stack Technology."
+              ghLink="https://github.com/RohitSathya/Mern_BankManagement"
+              demoLink="https://mern-bank-managementfront-ckyosgqya-rohits-projects-a5c6d24a.vercel.app/"
             
             />
           </Col>
