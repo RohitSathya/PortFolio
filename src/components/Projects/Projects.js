@@ -7,6 +7,7 @@ import ec2 from "../../Assets/Projects/ec2.png";
 import ec3 from '../../Assets/Projects/ec3.png';
 import ec4 from '../../Assets/Projects/ec4.png'
 import ec5 from '../../Assets/Projects/ec5.webp'
+import ec7 from '../../Assets/Projects/ec5.webp'
 
 function Projects() {
   return (
@@ -71,6 +72,17 @@ function Projects() {
               description="Developed and Designed Bank Management System Application using MERN-Stack Technology."
               ghLink="https://github.com/RohitSathya/Mern_BankManagement"
               demoLink="https://mern-bank-managementfront-ckyosgqya-rohits-projects-a5c6d24a.vercel.app/"
+            
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ec7}
+              isBlog={false}
+              title="Multi-Form Response Tracker"
+              description="Multi-Form Response Tracker is a Next.js application for creating, submitting, and managing forms with features like multi-select dropdowns, real-time feedback, and local storage for seamless data collection and analysis."
+              ghLink="https://github.com/RohitSathya/Next_Form"
+              demoLink="https://next-form-zeta.vercel.app/"
             
             />
           </Col>
