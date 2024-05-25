@@ -7,7 +7,7 @@ import ec2 from "../../Assets/Projects/ec2.png";
 import ec3 from '../../Assets/Projects/ec3.png';
 import ec4 from '../../Assets/Projects/ec4.png'
 import ec5 from '../../Assets/Projects/ec5.webp'
-import ec7 from '../../Assets/Projects/ec5.webp'
+import ec7 from '../../Assets/Projects/ec7.png'
 
 function Projects() {
   return (
