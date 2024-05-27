@@ -8,7 +8,7 @@ import ec3 from '../../Assets/Projects/ec3.png';
 import ec4 from '../../Assets/Projects/ec4.png'
 import ec5 from '../../Assets/Projects/ec5.webp'
 import ec7 from '../../Assets/Projects/ec7.png'
-
+import ec8 from '../../Assets/Projects/ec8.png'
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -83,6 +83,17 @@ function Projects() {
               description="Multi-Form Response Tracker is a Next.js application for creating, submitting, and managing forms with features like multi-select dropdowns, real-time feedback, and local storage for seamless data collection and analysis."
               ghLink="https://github.com/RohitSathya/Next_Form"
               demoLink="https://next-form-zeta.vercel.app/"
+            
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ec8}
+              isBlog={false}
+              title="Real Estate Management System"
+              description="This is a Real Estate Management System built using the MERN stack (MongoDB, Express, React, Node.js). The system allows sellers to add properties, buyers to express interest in properties, and view details of interested users."
+              ghLink="https://github.com/RohitSathya/Challenges_Presidio"
+              demoLink="https://presidio-frontend.onrender.com/"
             
             />
           </Col>
