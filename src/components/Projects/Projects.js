@@ -9,6 +9,7 @@ import ec4 from '../../Assets/Projects/ec4.png'
 import ec5 from '../../Assets/Projects/ec5.webp'
 import ec7 from '../../Assets/Projects/ec7.png'
 import ec8 from '../../Assets/Projects/ec8.png'
+import ec9 from '../../Assets/Projects/ec9.png'
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -94,6 +95,17 @@ function Projects() {
               description="This is a Real Estate Management System built using the MERN stack (MongoDB, Express, React, Node.js). The system allows sellers to add properties, buyers to express interest in properties, and view details of interested users."
               ghLink="https://github.com/RohitSathya/Challenges_Presidio"
               demoLink="https://presidio-frontend.onrender.com/"
+            
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ec9}
+              isBlog={false}
+              title="BetMaster"
+              description="BetMaster is a cutting-edge sports gambling website developed using React and Tailwind CSS. The platform offers a seamless and engaging betting experience for sports enthusiasts, with a sleek, responsive design and a plethora of features that cater to both novice and seasoned bettors."
+              ghLink="https://github.com/RohitSathya/sports_betting"
+              demoLink="https://sports-betting-ten.vercel.app/"
             
             />
           </Col>
