@@ -10,6 +10,7 @@ import ec5 from '../../Assets/Projects/ec5.webp'
 import ec7 from '../../Assets/Projects/ec7.png'
 import ec8 from '../../Assets/Projects/ec8.png'
 import ec9 from '../../Assets/Projects/ec9.png'
+import ec10 from '../../Assets/Projects/ec10.png'
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -106,6 +107,17 @@ function Projects() {
               description="BetMaster is a cutting-edge sports gambling website developed using React and Tailwind CSS. The platform offers a seamless and engaging betting experience for sports enthusiasts, with a sleek, responsive design and a plethora of features that cater to both novice and seasoned bettors."
               ghLink="https://github.com/RohitSathya/sports_betting"
               demoLink="https://sports-betting-ten.vercel.app/"
+            
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ec10}
+              isBlog={false}
+              title="MetaMask DApp - Ether Wallet Interaction"
+              description="This project is a simple blockchain application that connects to MetaMask, interacts with a deployed smart contract, and allows users to view and send Ether to the contract. The project is built using React and styled with Tailwind CSS for a modern and attractive design. Toast notifications are integrated using `react-toastify` to enhance user interactions."
+              ghLink="https://github.com/RohitSathya/Web3_dApp-React-/"
+              demoLink="https://web3-d-app-react.vercel.app/"
             
             />
           </Col>
