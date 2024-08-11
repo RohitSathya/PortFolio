@@ -41,7 +41,7 @@ function Projects() {
               title="E-Commerce Site"
               description="I've developed an e-commerce platform using the MERN stack, seamlessly integrating MongoDB, Express.js, React.js, and Node.js to deliver a dynamic and responsive shopping experience. This comprehensive solution empowers users to browse, purchase, and manage products effortlessly while ensuring scalability and performance in a modern web environment."
               ghLink="https://github.com/RohitSathya/Mern-ECommerce"
-              demoLink="https://ecomerce-foront.vercel.app/"
+              demoLink="https://ecomerce-mern-royo.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
