@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import ec from "../../Assets/Projects/ec.png";
+import ec from "../../Assets/Projects/ec1.png";
 import ec2 from "../../Assets/Projects/ec2.png";
 import ec3 from '../../Assets/Projects/ec3.png';
 import ec4 from '../../Assets/Projects/ec4.png'
