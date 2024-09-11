@@ -37,17 +37,19 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
+        {/* Adjusted the styling to ensure pages stack vertically */}
+        <Row className="resume flex-column align-items-center">
           <Document
             file={pdf}
             onLoadSuccess={onDocumentLoadSuccess}
-            className="d-flex justify-content-center"
+            className="d-flex flex-column align-items-center"
           >
             {Array.from(new Array(numPages), (el, index) => (
               <Page
                 key={`page_${index + 1}`}
                 pageNumber={index + 1}
                 scale={width > 786 ? 1.7 : 0.6}
+                className="mb-4"  // margin added to separate pages vertically
               />
             ))}
           </Document>
