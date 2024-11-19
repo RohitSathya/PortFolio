@@ -28,6 +28,15 @@ function NavBar() {
     }
   }
 
+  // Smooth scroll to the element
+  const handleNavClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    updateExpanded(false); // Collapse the navbar on selection
+  };
+
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -39,7 +48,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <p style={{fontSize:'35px',color:'violet',fontStyle:'italic'}}>RS</p>
+          <p style={{ fontSize: '35px', color: 'violet', fontStyle: 'italic' }}>RS</p>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -54,61 +63,40 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link onClick={() => handleNavClick('home')}>
+                <AiOutlineHome style={{ marginBottom: "10px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link onClick={() => handleNavClick('about')}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+              <Nav.Link onClick={() => handleNavClick('projects')}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link onClick={() => handleNavClick('resume')}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
+
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/certification"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Certication
+              <Nav.Link onClick={() => handleNavClick('certificate')}>
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Certification
               </Nav.Link>
             </Nav.Item>
-
-            
-
-          
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
+
 
 export default NavBar;
