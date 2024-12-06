@@ -51,8 +51,8 @@ function Projects() {
               isBlog={false}
               title="VideoConverter SAAS"
               description="Introducing a cutting-edge browser-based video conversion tool built with FFmpeg and React, designed for seamless performance and unmatched flexibility. This project empowers users to convert videos to multiple formats (e.g., MP4, WebM) directly in their browser without any server dependencies."
-              ghLink="https://github.com/RohitSathya/UrlShrinker"
-              demoLink="https://github.com/RohitSathya/VideoSaas"
+              ghLink="https://github.com/RohitSathya/VideoSaas"
+              demoLink="https://royo-video-saas.vercel.app/"
             
             />
           </Col>
